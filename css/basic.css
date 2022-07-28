@@ -1,0 +1,140 @@
+@charset "UTF-8";
+* { box-sizing:border-box;}
+body { font-family:'Raleway', Arial, Helvetica, sans-serif; font-size:16px; color:#333;  }
+a { color:inherit; }
+ul:after { display:block; content:""; clear:both; }
+
+/*header*/
+#header { position:fixed; width:100%; background:#fff; z-index:100; }
+#header .top { border-bottom:1px solid #ccc; }
+#header .wrap { position:relative; max-width:1680px; height:45px; margin:auto; padding:5px 60px; }
+#header .top .wrap h2 { float:left; }
+#header .top .wrap .util_menu { float:right; padding-top:10px; }
+#header .top .wrap .util_menu li { position:relative;  display:inline-block; padding-right:8px; margin-right:5px; font-size:10px; font-weight: bold; color: #666; }
+#header .top .wrap .util_menu li:after {  position:absolute; content:""; width:1px; height:16px; background: #e0e0e0; right:0; top:0}
+#header .top .wrap .util_menu li:last-child { padding-right:0; margin-right:0;}
+#header .top .wrap .util_menu li:last-child:after { display:none;}
+
+
+
+#header .bottom { border-bottom:1px solid #ccc; }
+#header .bottom .wrap { height:auto; }
+#header .bottom .b_logo { display:inline-block; font-size:18px; font-weight:bold; letter-spacing:-0.5px; padding-right:3%; color: #4b4b4b; }
+
+#header .bottom .gnb_menu { display:inline-block; }
+#header .bottom .gnb_menu > ul { }
+#header .bottom .gnb_menu > ul > li { display:inline-block; padding:30px 10px  }
+#header .bottom .gnb_menu > ul > li>a {color: #666; font-weight:bold;}
+#header .bottom .gnb_menu > ul > li:hover > a { color:#000; text-decoration:underline; }
+
+#header .bottom .search_area{ position:absolute; right:60px; top:18px; }
+#header .bottom .search_area .search_box { width:300px; border:1px solid #d8d8d8;  }
+#header .bottom .search_area .search_box input { width:230px; padding-left:10px; height:38px;line-height:38px; border:0; outline:0;  }
+#header .bottom .search_area .search_box button { width:62px; height:38px;  background:url('../img/mb_ico_srch.png') no-repeat center center / 22px; border:0; text-indent:-9999px; cursor:pointer; }
+
+
+/*contents*/
+#contents { padding-top:123px; }
+.main_page {}
+
+
+/*contents - main_visual*/
+.main_visual { text-align:center; }
+.main_visual img { width:100%; max-width:1900px;  }
+
+/*contents - main_page*/
+.main_page section { margin-top:100px; }
+.main_page .m_tit { font-weight: bold; font-size:50px; color:#fccd9f; margin-bottom:50px; }
+.main_page .wrap {position: relative; width:1400px; margin:auto; }
+.main_page img { width:100%; }
+
+/*contents - best_prd */
+.best_prd { }
+.best_prd .wrap .all_view {position: absolute; margin-top: 25px; right:15px; font-weight: bold; font-size:15x; color:#fccd9f;}
+.best_prd .wrap .all_view:hover > a {color: #fff;}
+
+.best_prd li { float:left; width:450px; margin:0 25px 25px 0; }
+.best_prd li:nth-child(3n) { margin-right:0 }
+.best_prd .tit { margin-top:24px; font-size:21px; font-weight:bold; letter-spacing: -1px; }
+.best_prd .tit .sub-tit{ display:block; font-size:16px; font-weight:normal; color:#666; margin-bottom:10px; }
+
+.best_prd .more { display:inline-block; font-size:15px; background:url('../img/ico_arrow_beige.png') no-repeat 100% 50%; color:#666; padding-right:13px; margin-top: 30px; }
+
+/* contents - e_shop_bn */
+.hobby_bn { position:relative; text-align:center; }
+.hobby_bn img { }
+.hobby_bn .bn_txt { position:absolute; top:50%; left:50%;  transform:translate(-50%, -50%);  margin:auto; text-align:left; font: 16px/1.8em '맑은 고딕',sans-serif;
+    letter-spacing:-0.07em ; color:#fff; }
+.hobby_bn .bn_txt strong { display:block; font:bold 40px / 2em '맑은 고딕',sans-serif;  }
+
+/* footer */
+#footer { background:#111; color:#999; font-size:14px; line-height:1.8em;
+letter-spacing:-1px; margin-top:90px; }
+#footer .wrap { width:1400px; margin:auto;  }
+
+#footer .top {padding:50px 0;}
+#footer .top .wrap {  background:url('../img/mb_logo_wh.png') no-repeat 0 0 / 62px;  }
+#footer .top .top_right { float:right; }
+#footer .top .top_right div { float:left; padding-right:20px ;}
+#footer .top .top_right ul { position:relative; float:left; }
+#footer .top .top_right ul:nth-of-type(1) { padding:0 90px 0 20px; }
+#footer .top .top_right ul:nth-of-type(2) { padding:0 20px}
+#footer .top .top_right .up {font-weight: bold; color: #FFF;  }
+#footer .top .top_right ul::before { position:absolute; left:0; content:""; width:1px; height:250px; background:#4b4b4b; } 
+
+
+#footer .top .address { clear:both;
+    }
+
+#footer .bottom { border-top:1px solid #333; padding:50px 0; }
+#footer .bottom .wrap { }
+#footer .bottom .wrap::after { display:block; content:""; clear:both; }
+#footer .bottom ul.menu { float:left; }
+#footer .bottom ul.menu li { float:left; border-left:1px solid #292929; padding:0 10px;}
+#footer .bottom ul.menu a { font-size:15px;   }
+#footer .bottom ul.menu li:first-child { border-left:none; padding-left:0 ; }
+
+#footer .bottom .toggle { position:relative; float:right; width:230px;  text-align:left; font-size:15px; }
+#footer .bottom .toggle button { display:block; line-height:40px; width:100%;background:transparent; border:1px solid #666; padding:0 15px; text-align:left; cursor:pointer }
+#footer .bottom .toggle button span { color:#999; font-size:15px;}
+#footer .bottom .toggle ul { display:none; position:absolute; bottom:100%; left:0; right:0;  border:1px solid #666; border-bottom:0; background:#111; padding:0 15px; }
+#footer .bottom .toggle ul li { padding:8px 0;}
+#footer .bottom .toggle ul li a { }
+
+
+/*슬라이더 부분*/
+.main_slider { width:100%; height:auto; }
+
+.swiper-slide {}
+.swiper-slide img { width:100%; height:100%; object-fit:cover;}
+
+.swiper-button-next, .swiper-button-prev { color:#fff; }
+
+.swiper-pagination {}
+.swiper-pagination-bullet { background:#fff; width:10px; height:10px; opacity:.5}
+.swiper-pagination-bullet-active {  background:#FFDB00; opacity:1 }
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction { bottom:20px; }
+
+main { height:500px; border:1px solid #999; margin:50px; }
+
+
+@media ( max-width:1280px ) {
+    #header .wrap {
+        padding: 5px 30px;
+    }
+    #header .bottom .search_area { display:none; }
+    
+    .bottom { width:100%; }
+    #contents > div { width:50%; }
+    #footer { width:100%; }
+}
+
+@media ( max-width:960px ) {
+     
+
+}
+
+@media ( max-width:720px ) {
+
+}
